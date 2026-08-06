@@ -3,243 +3,301 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pranav Surampudi</title>
+  <title>Pranav Surampudi — Software Engineer</title>
+  <meta name="description" content="Test engineer building iOS and full-stack apps. Amble is on the App Store. Currently open to new roles.">
+  <meta property="og:title" content="Pranav Surampudi — Software Engineer">
+  <meta property="og:description" content="Test engineer building iOS and full-stack apps. Amble is on the App Store. Currently open to new roles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pranavski.github.io/">
+  <meta name="theme-color" content="#14181d">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="gradient-bg">
-    <header>
-      <nav>
-        <div class="nav-content">
-          <a href="#" class="logo">PS</a>
-          <ul class="nav-links">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <a class="skip" href="#work">Skip to work</a>
+
+  <header class="topbar">
+    <a href="#" class="mark" aria-label="Pranav Surampudi, home">PS</a>
+    <nav aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow reveal">Pranav Surampudi — Software Engineer</p>
+      <h1 class="reveal">I build software that&rsquo;s careful about what it claims.</h1>
+      <p class="lede reveal">
+        Test engineering is my day job: I spend it finding the places where software&rsquo;s
+        promises break. The rest of the time I build iOS and full-stack apps that try not to
+        make promises they can&rsquo;t keep.
+      </p>
+      <p class="status reveal">
+        <span class="dot" aria-hidden="true"></span>
+        Open to new roles
+      </p>
+      <div class="proof reveal">
+        <a class="proof-card" href="https://apps.apple.com/us/app/amble-get-your-friends-out/id6756865993" target="_blank" rel="noopener">
+          <span class="proof-label">On the App Store</span>
+          <span class="proof-name">Amble: Get Your Friends Out</span>
+          <span class="proof-meta">v2.1 &middot; shipped Feb 2026</span>
+        </a>
+      </div>
+    </section>
+
+    <hr class="interval">
+
+    <section id="work" class="ledger" aria-labelledby="work-h">
+      <h2 id="work-h" class="section-h">Work</h2>
+
+      <article class="entry reveal">
+        <div class="entry-head">
+          <h3>Amble</h3>
+          <p class="entry-status shipped">Shipped &middot; App Store</p>
+        </div>
+        <div class="entry-body">
+          <p class="entry-desc">
+            An AI hangout planner for friend groups. Describe the plan &mdash; &ldquo;brunch with
+            four friends,&rdquo; &ldquo;game night for the squad&rdquo; &mdash; and Amble suggests
+            venues that account for group size, everyone&rsquo;s preferences, the weather, and
+            what&rsquo;s actually nearby. Now on version 2.1.
+          </p>
+          <p class="note">
+            <span class="note-k">Rule</span>
+            The privacy policy, terms, and moderation guide were written before launch, not after.
+          </p>
+          <ul class="stack">
+            <li>SwiftUI</li><li>Supabase</li><li>Claude</li><li>fastlane</li>
           </ul>
+          <p class="links">
+            <a href="https://apps.apple.com/us/app/amble-get-your-friends-out/id6756865993" target="_blank" rel="noopener">View on the App Store &rarr;</a>
+          </p>
         </div>
-      </nav>
-    </header>
+      </article>
 
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <div class="hero-text">
-            <h1>Hi, I'm <span class="gradient-text">Pranav</span></h1>
-            <p class="subtitle">Full-Stack Developer & Digital Innovator</p>
-            <p class="hero-description">Building the future, one line of code at a time. Specializing in modern web technologies and creating exceptional user experiences.</p>
-            <div class="cta-buttons">
-              <a href="#projects" class="btn primary">View Projects</a>
-              <a href="#contact" class="btn secondary">Get in Touch</a>
-            </div>
-          </div>
+      <article class="entry reveal">
+        <div class="entry-head">
+          <h3>Soma</h3>
+          <p class="entry-status building">In development</p>
         </div>
-      </section>
-    </main>
-  </div>
+        <div class="entry-body">
+          <p class="entry-desc">
+            A food&ndash;body record for people who cook. Ten-second meal logging by voice or text,
+            read-only HealthKit, and a nightly insight engine that surfaces correlations worth
+            watching. No goals, no calorie targets, no streak shaming &mdash; understanding, not
+            dieting.
+          </p>
+          <p class="note">
+            <span class="note-k">Rule</span>
+            Calories are always ranges &mdash; <span class="range">~550&ndash;700</span>, never a
+            bare number. Insights stay hedged and gated on data coverage: worth watching, not a
+            verdict. Never medical advice.
+          </p>
+          <ul class="stack">
+            <li>SwiftUI</li><li>HealthKit</li><li>Supabase Edge Functions</li><li>Claude</li>
+          </ul>
+          <p class="links">
+            <a href="https://pranavski.github.io/soma-notes/" target="_blank" rel="noopener">Read the engineering notes &rarr;</a>
+          </p>
+        </div>
+      </article>
 
-  <section id="projects" class="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <div class="project-content">
-          <h3>Neural Network Playground</h3>
-          <p>An interactive web application for visualizing and experimenting with neural networks. Features real-time training visualization, customizable architectures, and educational modules for machine learning concepts.</p>
-          <div class="tech-stack">
-            <span>React</span>
-            <span>TensorFlow.js</span>
-            <span>D3.js</span>
-            <span>TypeScript</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-          </div>
+      <article class="entry reveal">
+        <div class="entry-head">
+          <h3>recs.fm</h3>
+          <p class="entry-status open">Open source</p>
+        </div>
+        <div class="entry-body">
+          <p class="entry-desc">
+            Music recommendations that actually listen. It pulls your Spotify history, reasons
+            about it with Claude, and keeps the results so you can see how your taste moves.
+            Neo-brutalist UI.
+          </p>
+          <p class="note">
+            <span class="note-k">Detail</span>
+            Structured model output validated with Zod, prompt caching on the stable system
+            prompt, and HttpOnly signed-cookie sessions that refresh Spotify tokens on their own.
+          </p>
+          <ul class="stack">
+            <li>Next.js 15</li><li>TypeScript</li><li>Spotify Web API</li><li>Supabase</li><li>Tailwind v4</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/pranavski/recs-fm" target="_blank" rel="noopener">Source on GitHub &rarr;</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="entry reveal">
+        <div class="entry-head">
+          <h3>Indigenous Representation in Film</h3>
+          <p class="entry-status open">Open source</p>
+        </div>
+        <div class="entry-body">
+          <p class="entry-desc">
+            An interactive map connecting Indigenous cinema to the territories it comes from,
+            with themes, critical scholarship on decolonization, and an open submission form for
+            adding films.
+          </p>
+          <ul class="stack">
+            <li>React</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/pranavski/rez-map-stories" target="_blank" rel="noopener">Source on GitHub &rarr;</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="entry reveal">
+        <div class="entry-head">
+          <h3>pranav-browser</h3>
+          <p class="entry-status open">Open source</p>
+        </div>
+        <div class="entry-body">
+          <p class="entry-desc">
+            A minimal desktop browser built around a local model. Ollama runs on your own
+            machine, so the assistant works without shipping the page you&rsquo;re reading to
+            anyone&rsquo;s API.
+          </p>
+          <ul class="stack">
+            <li>Electron</li><li>React</li><li>TypeScript</li><li>Ollama</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/pranavski/pranav-browser" target="_blank" rel="noopener">Source on GitHub &rarr;</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="entry reveal">
+        <div class="entry-head">
+          <h3>Coffee Journal</h3>
+          <p class="entry-status open">Open source</p>
+        </div>
+        <div class="entry-body">
+          <p class="entry-desc">
+            A native iOS brew log &mdash; capture a photo, record the drink, browse the gallery.
+            Swift throughout, with the Xcode project generated from a manifest so the repo
+            stays reviewable.
+          </p>
+          <ul class="stack">
+            <li>Swift</li><li>SwiftUI</li><li>XcodeGen</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/pranavski/CoffeeJournal" target="_blank" rel="noopener">Source on GitHub &rarr;</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="entry reveal">
+        <div class="entry-head">
+          <h3>Formula 1 analysis</h3>
+          <p class="entry-status open">Open source</p>
+        </div>
+        <div class="entry-body">
+          <p class="entry-desc">
+            Twenty-odd datasets &mdash; races, qualifying, pit stops, fastest laps, constructor
+            standings &mdash; worked through in Jupyter to answer a written set of questions
+            about what actually decides a season.
+          </p>
+          <ul class="stack">
+            <li>Python</li><li>pandas</li><li>Jupyter</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/pranavski/Formula-1-analysis" target="_blank" rel="noopener">Source on GitHub &rarr;</a>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <hr class="interval">
+
+    <section id="toolkit" class="toolkit" aria-labelledby="toolkit-h">
+      <h2 id="toolkit-h" class="section-h">Toolkit</h2>
+      <div class="tk-grid">
+        <div class="tk-col">
+          <h3>Building</h3>
+          <ul><li>Swift</li><li>SwiftUI</li><li>TypeScript</li><li>Python</li><li>React</li><li>Next.js</li><li>Electron</li></ul>
+        </div>
+        <div class="tk-col">
+          <h3>Data &amp; backend</h3>
+          <ul><li>PostgreSQL</li><li>Supabase</li><li>Row Level Security</li><li>Edge Functions</li><li>pandas</li></ul>
+        </div>
+        <div class="tk-col">
+          <h3>Models</h3>
+          <ul><li>Claude API</li><li>Structured output</li><li>Prompt caching</li><li>Ollama</li></ul>
+        </div>
+        <div class="tk-col">
+          <h3>Testing &amp; release</h3>
+          <ul><li>Test automation</li><li>XCTest</li><li>pytest</li><li>fastlane</li><li>GitHub Actions</li></ul>
         </div>
       </div>
-      <div class="project-card">
-        <div class="project-content">
-          <h3>Quantum Computing Simulator</h3>
-          <p>A web-based quantum circuit simulator with drag-and-drop interface. Allows users to build quantum circuits, run simulations, and learn quantum computing principles through interactive tutorials.</p>
-          <div class="tech-stack">
-            <span>Vue.js</span>
-            <span>WebGL</span>
-            <span>Python</span>
-            <span>FastAPI</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-content">
-          <h3>AI-Powered Code Review</h3>
-          <p>An intelligent code review tool that uses machine learning to analyze code quality, suggest improvements, and detect potential bugs. Integrates with GitHub and provides detailed insights.</p>
-          <div class="tech-stack">
-            <span>Node.js</span>
-            <span>OpenAI API</span>
-            <span>PostgreSQL</span>
-            <span>Docker</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="about" class="about">
-    <div class="about-content">
-      <h2>About Me</h2>
-      <p>I'm a passionate software engineer who loves creating innovative solutions that push the boundaries of what's possible. With expertise in full-stack development, machine learning, and emerging technologies, I specialize in building applications that not only solve real-world problems but also provide exceptional user experiences.</p>
-      <div class="skills">
-        <div class="skill-category">
-          <h3>Programming Languages</h3>
-          <div class="skill-tags">
-            <span>JavaScript</span>
-            <span>TypeScript</span>
-            <span>Python</span>
-            <span>Java</span>
-            <span>Go</span>
-            <span>Rust</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Frontend Technologies</h3>
-          <div class="skill-tags">
-            <span>React</span>
-            <span>Vue.js</span>
-            <span>Next.js</span>
-            <span>WebGL</span>
-            <span>Three.js</span>
-            <span>D3.js</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Backend & Cloud</h3>
-          <div class="skill-tags">
-            <span>Node.js</span>
-            <span>FastAPI</span>
-            <span>PostgreSQL</span>
-            <span>AWS</span>
-            <span>Docker</span>
-            <span>Kubernetes</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>AI & ML</h3>
-          <div class="skill-tags">
-            <span>TensorFlow</span>
-            <span>PyTorch</span>
-            <span>OpenAI API</span>
-            <span>Computer Vision</span>
-            <span>NLP</span>
-            <span>Quantum Computing</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <h3 class="sub-h">Foundations</h3>
+      <p class="found-note">
+        Systems and data-structures coursework in C and C++, kept public.
+      </p>
+      <ul class="found-list">
+        <li>CPU scheduler</li>
+        <li>Virtual memory manager</li>
+        <li>Thread synchronization</li>
+        <li>Contiguous memory allocation</li>
+        <li>System call timing</li>
+        <li>Monte Carlo simulation</li>
+        <li>Lazy-delete BST</li>
+        <li>DNA palindrome search</li>
+      </ul>
+    </section>
 
-  <section id="contact" class="contact">
-    <h2>Let's Connect</h2>
-    <p>Ready to collaborate on something amazing? Let's build the future together!</p>
-    <div class="social-links">
-      <a href="https://github.com/pranavski" target="_blank" class="social-link" title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://linkedin.com/in/pranav-surampudi" target="_blank" class="social-link" title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="mailto:pranav@example.com" class="social-link" title="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://twitter.com/pranavski" target="_blank" class="social-link" title="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://dev.to/pranavski" target="_blank" class="social-link" title="Dev.to">
-        <i class="fab fa-dev"></i>
-      </a>
-    </div>
-  </section>
+    <hr class="interval">
+
+    <section id="contact" class="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h" class="section-h">Contact</h2>
+      <p class="contact-lede">
+        I&rsquo;m looking for my next role. If you&rsquo;re building something that has to be
+        right, I&rsquo;d like to hear about it.
+      </p>
+      <ul class="contact-list">
+        <li><span class="ck">Email</span><a href="mailto:pranav.surampudi@gmail.com">pranav.surampudi@gmail.com</a></li>
+        <li><span class="ck">GitHub</span><a href="https://github.com/pranavski" target="_blank" rel="noopener">github.com/pranavski</a></li>
+        <li><span class="ck">App Store</span><a href="https://apps.apple.com/us/app/amble-get-your-friends-out/id6756865993" target="_blank" rel="noopener">Amble</a></li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2024 Pranav Surampudi. Built with <span class="heart">❤️</span></p>
+    <p>Pranav Surampudi</p>
+    <p class="colophon">Bricolage Grotesque &amp; IBM Plex. Hand-written HTML and CSS.</p>
   </footer>
 
   <script>
-    // Add interactive effects
-    document.addEventListener('DOMContentLoaded', function() {
-      // Smooth scrolling for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
+    (function () {
+      var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var items = document.querySelectorAll('.reveal');
+
+      if (reduced || !('IntersectionObserver' in window)) {
+        items.forEach(function (el) { el.classList.add('is-in'); });
+        return;
+      }
+
+      var hero = document.querySelectorAll('.hero .reveal');
+      hero.forEach(function (el, i) {
+        setTimeout(function () { el.classList.add('is-in'); }, 90 * i);
+      });
+
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-in');
+            io.unobserve(e.target);
           }
         });
-      });
+      }, { rootMargin: '0px 0px -12% 0px' });
 
-      // Add parallax effect to floating elements
-      window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const parallaxElements = document.querySelectorAll('.hero::before, .hero::after');
-        
-        parallaxElements.forEach((element, index) => {
-          const speed = 0.5 + (index * 0.2);
-          element.style.transform = `translateY(${scrolled * speed}px)`;
-        });
-      });
-
-      // Hero title will display normally with gradient effect
-
-      // Add glow effect on mouse move
-      document.addEventListener('mousemove', (e) => {
-        const cursor = document.createElement('div');
-        cursor.className = 'cursor-glow';
-        cursor.style.cssText = `
-          position: fixed;
-          width: 20px;
-          height: 20px;
-          background: radial-gradient(circle, rgba(0, 255, 255, 0.3), transparent);
-          border-radius: 50%;
-          pointer-events: none;
-          z-index: 9999;
-          left: ${e.clientX - 10}px;
-          top: ${e.clientY - 10}px;
-          animation: cursorFade 0.5s ease-out forwards;
-        `;
-        
-        document.body.appendChild(cursor);
-        
-        setTimeout(() => {
-          cursor.remove();
-        }, 500);
-      });
-
-      // Add CSS for cursor effect
-      const style = document.createElement('style');
-      style.textContent = `
-        @keyframes cursorFade {
-          0% { opacity: 1; transform: scale(1); }
-          100% { opacity: 0; transform: scale(3); }
-        }
-      `;
-      document.head.appendChild(style);
-    });
+      document.querySelectorAll('.entry.reveal').forEach(function (el) { io.observe(el); });
+    })();
   </script>
 </body>
 </html>
